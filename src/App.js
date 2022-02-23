@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Soon from './pages/Soon';
 
 function App() {
 
@@ -34,6 +36,10 @@ function App() {
         <AnimatePresence>
           <Routes>
             <Route path='/' exact element= { <Home /> } />
+            <Route path='/about' exact element= { <Soon /> } />
+            <Route path='/skills' exact element= { <Soon /> } />
+            <Route path='/work' exact element= { <Soon /> } />
+            <Route path='/contact' exact element= { <Contact /> } />
           </Routes>
         </AnimatePresence>
       
