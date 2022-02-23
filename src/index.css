@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=Poppins&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
+
+@font-face {
+  font-family: "HurmeGeometricSans3";
+  src: url("./fonts/HURME/HurmeGeometricSans3.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "HurmeGeometricSans3Black";
+  src: url("./fonts/HURME/HurmeGeometricSans3 Black.otf") format("opentype")
+}
+
+@font-face {
+font-family: "HurmeGeometricSans3Bold";
+src: url("./fonts/HURME/HurmeGeometricSans3 Bold.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("./fonts/SF/SFPRODISPLAYREGULAR.OTF") format("opentype")
+}
+
+html{
+  background-color: white;
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button{
+  background: #0B5FFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+color: white;
+padding: 6px 14px;
+margin-bottom: 15px;
+transition: 0.2s all;
+border: 1px #0B5FFF solid;
+}
+
+button:hover{
+  background-color: white;
+  color: #0B5FFF;
+}
+
+button:active{
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.srcCodePro{
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.hurme{
+  font-family: HurmeGeometricSans3Bold;
+}
+
+.sfPro{
+  font-family: "SFProDisplay";
+}
+
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
+.inria{
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.external {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.words{display: inline-block;}
+
+.words span{
+  display: block;
+  height: 100%;
+  animation: spin_words 15s infinite;
+  padding: 10px 0px;
+}
+@keyframes spin_words{
+  
+  18%{
+    transform: translateY(0%);
+  }
+  25%{
+    transform: translateY(-100%);
+  }
+  
+  43%{
+    transform: translateY(-100%);
+  }
+  50%{
+    transform: translateY(-200%);
+  }
+  
+  68%{
+    transform: translateY(-200%);
+  }
+  75%{
+    transform: translateY(-300%);
+  }
+  
+  93%{
+    transform: translateY(-300%);
+  }
+  100%{
+    transform: translateY(-400%);
+  }
+}
+
+.words{
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+
+}
+
+h1{
+  font-family: 'Source Code Pro', sans-serif;
+  vertical-align: middle;
+}
+
+.h1Container{
+  height: 84px;
+  overflow: hidden;
+}
+
+header{
+  font-family: 'Source Code Pro', sans-serif;
+  text-decoration: none;
+  color: #333;
+  position: fixed;
+}
