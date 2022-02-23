@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 
 function App() {
