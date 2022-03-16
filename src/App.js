@@ -3,6 +3,8 @@ import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Soon from './pages/Soon';
+import About from './pages/About';
+import Skills from './pages/Skills';
 
 function App() {
 
@@ -25,7 +27,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <header className='p-6 flex z-10'>
+        <header className='p-6 flex z-10 sm:w-full sm:bg-white'>
           <Link to="/" className="no-underline font-semibold text-lg cursor-pointer align-middle">@AllenBrd</Link>
           <img alt="twitter" src='/assets/imgs/twitter.svg' onClick={twitterRedirect} className='align-middle ml-5 cursor-pointer' />
           <img alt="reddit" src='/assets/imgs/reddit.svg' onClick={redditRedirect} className='align-middle ml-5 cursor-pointer' />
@@ -33,15 +35,17 @@ function App() {
           <img alt='linkedin' src='/assets/imgs/linkedin.svg' onClick={linkedinrRedirect} className='align-middle ml-5 cursor-pointer' />
         </header>
 
+        <div className='sm:m-2'>
         <AnimatePresence>
-          <Routes>
-            <Route path='/' exact element= { <Home /> } />
-            <Route path='/about' exact element= { <Soon /> } />
-            <Route path='/skills' exact element= { <Soon /> } />
-            <Route path='/work' exact element= { <Soon /> } />
-            <Route path='/contact' exact element= { <Contact /> } />
-          </Routes>
+            <Routes>
+              <Route path='/' exact element= { <Home /> } />
+              <Route path='/about' exact element= { <About /> } />
+              <Route path='/skills' exact element= { <Skills /> } />
+              <Route path='/work' exact element= { <Soon /> } />
+              <Route path='/contact' exact element= { <Contact /> } />
+            </Routes>
         </AnimatePresence>
+        </div>
       
       </BrowserRouter>
     </>
