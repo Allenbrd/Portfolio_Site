@@ -38,6 +38,42 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@-webkit-keyframes passSlide {
+  0% {
+    /* transform: translateY(0%); */
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@-moz-keyframes passSlide {
+  0% {
+    /* transform: translateY(0%); */
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes passSlide {
+  0% {
+    /* transform: translateY(0%); */
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.passSlide{
+  -webkit-animation-name: passSlide;
+  -webkit-animation-duration: 5s;
+  /* -webkit-animation-iteration-count: infinite; */
+  -moz-animation-name: passSlide;
+  -moz-animation-duration: 5s;
+  /* -moz-animation-iteration-count: infinite; */
+  animation-name: passSlide;
+  animation-duration: 5s;
+}
+
 button{
   background: #0B5FFF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -102,6 +138,20 @@ code {
   height: 100%;
   width: 100%;
   transition: 0.2s all;
+}
+
+.externalSkill {
+  display: table;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s all;
+}
+
+.skillsPage{
+  /* background-color: rgba(51, 51, 51, 0.411); */
+  background: linear-gradient(#ffffff00, #000000);
 }
 
 .middle {
