@@ -11,20 +11,20 @@ export default function Skills(){
                             <div className="sm:p-10"></div>
                                 <div><h1 className='text-2xl  font-semibold'>My Skills</h1>
                                 
-                                    <img className='m-5 w-16 inline-flex' src='/assets/imgs/python.png' />
-                                    <img className='m-5 w-28 inline-flex' src='/assets/imgs/golang.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/php.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/html.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/css.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/js.png' />
-                                    <img className=' m-5 w-20 inline-flex' src='/assets/imgs/reactjs.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/tailwindcss.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/cassandra.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/mysql.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/git.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/figma.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/ppro.png' />
-                                    <img className='m-5 w-20 inline-flex' src='/assets/imgs/pshop.png' />
+                                    <img className='m-5 w-16 inline-flex' alt='python' src='/assets/imgs/python.png' />
+                                    <img className='m-5 w-28 inline-flex' alt='golang' src='/assets/imgs/golang.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='php' src='/assets/imgs/php.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='html' src='/assets/imgs/html.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='css' src='/assets/imgs/css.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='js' src='/assets/imgs/js.png' />
+                                    <img className=' m-5 w-20 inline-flex' alt='react' src='/assets/imgs/reactjs.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='python' src='/assets/imgs/tailwindcss.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='tailwind' src='/assets/imgs/cassandra.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='mysql' src='/assets/imgs/mysql.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='git' src='/assets/imgs/git.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='figma' src='/assets/imgs/figma.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='premierepro' src='/assets/imgs/ppro.png' />
+                                    <img className='m-5 w-20 inline-flex' alt='photoshop' src='/assets/imgs/pshop.png' />
 
                                     <br />
 
