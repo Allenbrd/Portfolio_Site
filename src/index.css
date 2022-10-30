@@ -38,8 +38,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.active{
+  border: #0B5FFF solid ;
+  border-width: 0px 0px 2px 0px;
+  transition:  0.2s;
+}
+
+.navLinks a{
+  padding: 3px;
+  border-width: 0px 0px 2px 0px;
+border: none;
+}
+
+.bigHomeBtn{
+  border: 2px #0B5FFF solid;
+  border-radius: 16px;
+  
+}
+
+.stcwhitebg{
+  background-image: linear-gradient(to right, #31eaff, #7a54ff, #ff26ff);
+}
+
+.afterstrwhitebg{
+  background-image: linear-gradient(to right, #7131c3, #e50136);
+}
+
+.learningbg{
+  background-image: url("/public/assets/imgs/neural-network-in-machine-learning-artificial-intelligence-concept-illustration-with-gradient-for-computer-science-poster-or-graphic-element-vector.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 button{
-  background: #0B5FFF;
+background: #0B5FFF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 16px;
 color: white;
@@ -122,8 +159,17 @@ code {
 }
 
 h2{
-  font-family: 'Source Code Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: x-large;
+  font-weight: bold;
+}
+
+h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: large;
   font-weight: bold;
 }
 

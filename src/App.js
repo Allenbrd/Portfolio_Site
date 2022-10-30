@@ -1,10 +1,11 @@
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
+import { BrowserRouter, Route, Routes, Link, NavLink, Router, useLocation  } from 'react-router-dom';
+import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Soon from './pages/Soon';
 import About from './pages/About';
 import Skills from './pages/Skills';
+import {useRouter} from 'next/router';
 
 function App() {
 
@@ -24,19 +25,51 @@ function App() {
     window.open("https://www.linkedin.com/in/allen-bridi-aba8a5209/", "_blank");
   }
 
+  const location = useRouter();
+
   return (
     <>
       <BrowserRouter>
-        <header className='p-6 flex z-10 sm:w-full sm:bg-white'>
-          <Link to="/" className="no-underline font-semibold text-lg cursor-pointer align-middle">@AllenBrd</Link>
-          <img alt="twitter" src='/assets/imgs/twitter.svg' onClick={twitterRedirect} className='align-middle ml-5 cursor-pointer' />
-          <img alt="reddit" src='/assets/imgs/reddit.svg' onClick={redditRedirect} className='align-middle ml-5 cursor-pointer' />
-          <img alt='github' src='/assets/imgs/github.svg' onClick={githubRedirect} className='align-middle ml-5 cursor-pointer' />
-          <img alt='linkedin' src='/assets/imgs/linkedin.svg' onClick={linkedinrRedirect} className='align-middle ml-5 cursor-pointer' />
+        <header className=' text-center p-6 flex flex-row z-10 sm:w-full sm:bg-white w-full shadow-lg top-0'>
+          <div className=' inline-block w-1/2 sm:w-full'>
+            <Link to="/" className="inline-block no-underline font-semibold text-lg cursor-pointer align-middle">@AllenBrd</Link>
+            <img alt="twitter" src='/assets/imgs/twitter.svg' onClick={twitterRedirect} className='md:hidden sm:inline-block inline-block align-middle ml-5 cursor-pointer' />
+            <img alt="reddit" src='/assets/imgs/reddit.svg' onClick={redditRedirect} className='md:hidden sm:inline-block inline-block align-middle ml-5 cursor-pointer' />
+            <img alt='github' src='/assets/imgs/github.svg' onClick={githubRedirect} className='md:hidden sm:inline-block inline-block align-middle ml-5 cursor-pointer' />
+            <img alt='linkedin' src='/assets/imgs/linkedin.svg' onClick={linkedinrRedirect} className='md:hidden sm:inline-block inline-block align-middle ml-5 cursor-pointer' />
+          </div>
+          <div className='sm:hidden inline-block float-right w-1/2 navLinks md:w-5/6 sm:w-0'>
+            <NavLink to="/about" activeClassName="active">About Me</NavLink>
+            <NavLink to="/skills" className='m-10 sm:m-4' activeClassName="active">Skills</NavLink>
+            <NavLink to="/work" className='mr-10 sm:mr-4' activeClassName="active">Work</NavLink>
+            <NavLink to="/contact" activeClassName="active">Contact Me</NavLink>
+          </div>
         </header>
 
         <div className='sm:m-2'>
         <AnimatePresence>
+          <motion.div
+          key={Router.route}
+          initial='initialState'
+          animate='animateState'
+          exit='exitState'
+          transition={{
+            duration: 0.75,
+          }}
+          variants={{
+            initialState: {
+              opacity: 0,
+              // clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+            },
+            animateState: {
+              opacity: 1,
+              // clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+            },
+            exitState: {
+              // clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
+            }
+          }}
+          >
             <Routes>
               <Route path='/' exact element= { <Home /> } />
               <Route path='/about' exact element= { <About /> } />
@@ -44,6 +77,7 @@ function App() {
               <Route path='/work' exact element= { <Soon /> } />
               <Route path='/contact' exact element= { <Contact /> } />
             </Routes>
+          </motion.div>
         </AnimatePresence>
         </div>
       
