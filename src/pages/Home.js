@@ -33,34 +33,34 @@ function Home() {
 
                         <div onClick={() => {navigate('/techclub')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 md:mb-10 mx-auto '>
                             <div className=' stcwhitebg w-full rounded-t-lg py-5 text-center'> 
-                                <img src='/assets/imgs/stcwhite.png' className='max-h-12 h-auto p-2 w-auto opacity-90  mx-auto text-center'/>
+                                <img alt='stc' src='/assets/imgs/stcwhite.png' className='max-h-12 h-auto p-2 w-auto opacity-90  mx-auto text-center'/>
                             </div>
                             <div className='w-full p-3'>
                                 <h3>Sharing my passion</h3>
                                 <p className=''>Sharing my passion for technology, programming, and entrepreneurship through the founding of the Sainte-Croix Tech Club (STC)</p>
-                                <a className=' text-blue-700 underline'>Learn more</a>
+                                <a href='/techclub' className=' text-blue-700 underline'>Learn more</a>
                             </div>
                         </div>
 
                         <div onClick={() => {navigate('/afterstream')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 md:mb-10 mx-auto '>
                             <div className=' afterstrwhitebg w-full rounded-t-lg py-5 text-center'> 
-                                <img src='/assets/imgs/afterstrwhite.png' className='max-h-12 h-auto opacity-90 p-2 w-auto mx-auto text-center'/>
+                                <img alt='afterstream' src='/assets/imgs/afterstrwhite.png' className='max-h-12 h-auto opacity-90 p-2 w-auto mx-auto text-center'/>
                             </div>
                             <div className='w-full p-3'>
                                 <h3>When passion meets entrepreneurship</h3>
                                 <p className=''>Afterstream is an entrepreneurial journey gathering my passion for video games, Twitch streaming, and programming sprinkled with great teamwork and leadership </p>
-                                <a className=' text-blue-700 underline'>Learn more</a>
+                                <a href='/afterstream' className=' text-blue-700 underline'>Learn more</a>
                             </div>
                         </div>
 
                         <div onClick={() => {navigate('/learning')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 md:mb-10 mx-auto '>
                             <div className=' learningbg w-full rounded-t-lg py-5 text-center'> 
-                                <img src='/assets/imgs/stcwhite.png' className='max-h-12 h-auto p-2 w-auto opacity-0  mx-auto text-center'/>
+                                <img alt='stc' src='/assets/imgs/stcwhite.png' className='max-h-12 h-auto p-2 w-auto opacity-0  mx-auto text-center'/>
                             </div>
                             <div className='w-full p-3'>
                                 <h3>Constant learning for constant improvement</h3>
                                 <p className=''>In a world where technology is growing exponentially quicker every day, education drives me and help me staying up to date</p>
-                                <a className=' text-blue-700 underline'>Learn more</a>
+                                <a href='/learning' className=' text-blue-700 underline'>Learn more</a>
                             </div>
                         </div>
                             
