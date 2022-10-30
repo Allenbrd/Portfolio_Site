@@ -5,7 +5,6 @@ import Contact from './pages/Contact';
 import Soon from './pages/Soon';
 import About from './pages/About';
 import Skills from './pages/Skills';
-import {useRouter} from 'next/router';
 
 function App() {
 
@@ -24,8 +23,6 @@ function App() {
   function linkedinrRedirect(){
     window.open("https://www.linkedin.com/in/allen-bridi-aba8a5209/", "_blank");
   }
-
-  const location = useRouter();
 
   return (
     <>
