@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes, Link, NavLink, Router, useLocation  } from 'react-router-dom';
-import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
+import { BrowserRouter, Route, Routes, Link, NavLink, Router  } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Soon from './pages/Soon';
