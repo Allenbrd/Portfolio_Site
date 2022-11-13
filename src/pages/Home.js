@@ -8,14 +8,15 @@ function Home() {
     return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="">
         <div className='external md:mt-28 '>
-            <div className='middle'>
+            <div className='my-28'>
                 <div className='internal w-full m-auto align-middle  text-center justify-center relative'>
+                <img alt='allen' src='/assets/imgs/allen.jpeg' className='w-36 rounded-full align-middle mx-auto my-10' />
                     <div className='h1Container'><h1 className='text-6xl inline-block align-middle'><div className='words'><span>Bonjour</span><span>Hello</span><span>Hola</span><span>مرحبا</span><span>Bonjour</span></div><span className='sm:hidden'>, I'm <span className='poppins font-semibold italic'>Allen </span><img alt="wavy hand" src='/assets/imgs/wavy_hand.png' className=' ml-5 w-14 inline-block align-middle' /></span></h1></div>
 
                     <p className='text-3xl mt-8 max-w-2xl mx-auto'>A young student passionate about <span className='srcCodePro italic text-gg'>computer science</span>, <span className='sfPro text-gg-yellow italic'>finance</span> and <span className='inria italic text-gg-green'>entrepreneurship</span></p>
                 
                     <div className='flex w-1/2 flex-wrap justify-evenly mt-10 mx-auto'>
-                        <Link to="/about"><button>About Me <img src='/assets/imgs/eyes.png' alt='eyes' className='w-5 inline-block align-middle ml-1' /></button></Link>
+                        {/* <Link to="/about"><button>About Me <img src='/assets/imgs/eyes.png' alt='eyes' className='w-5 inline-block align-middle ml-1' /></button></Link> */}
                         <Link to="/skills"><button>Skills <img src='/assets/imgs/bulb.png' alt='opened folder' className='w-5 inline-block align-middle ml-1' /></button></Link>
                         <Link to="/work"><button>Work <img src='/assets/imgs/opened_folder.png' alt='opened folder' className='w-5 inline-block align-middle ml-1' /></button></Link>
                         <Link to="/contact"><button>Contact Me <img src='/assets/imgs/envelope.png' alt="envelope" className='w-5 inline-block align-middle ml-1' /></button></Link>
@@ -31,7 +32,7 @@ function Home() {
                         }}
                     >
 
-                        <div onClick={() => {navigate('/techclub')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 md:mb-10 mx-auto '>
+                        <div onClick={() => {navigate('/techclub')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 sm:w-3/4 md:mb-10 mx-auto '>
                             <div className=' stcwhitebg w-full rounded-t-lg py-5 text-center'> 
                                 <img alt='stc' src='/assets/imgs/stcwhite.png' className='max-h-12 h-auto p-2 w-auto opacity-90  mx-auto text-center'/>
                             </div>
@@ -42,7 +43,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <div onClick={() => {navigate('/afterstream')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 md:mb-10 mx-auto '>
+                        <div onClick={() => {window.open('https://about.afterstream.live/', '_blank')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 sm:w-3/4 md:mb-10 mx-auto '>
                             <div className=' afterstrwhitebg w-full rounded-t-lg py-5 text-center'> 
                                 <img alt='afterstream' src='/assets/imgs/afterstrwhite.png' className='max-h-12 h-auto opacity-90 p-2 w-auto mx-auto text-center'/>
                             </div>
@@ -53,7 +54,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <div onClick={() => {navigate('/learning')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 md:mb-10 mx-auto '>
+                        <div onClick={() => {navigate('/learning')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 sm:w-3/4 md:mb-10 mx-auto '>
                             <div className=' learningbg w-full rounded-t-lg py-5 text-center'> 
                                 <img alt='stc' src='/assets/imgs/stcwhite.png' className='max-h-12 h-auto p-2 w-auto opacity-0  mx-auto text-center'/>
                             </div>

@@ -5,6 +5,7 @@ import Contact from './pages/Contact';
 import Soon from './pages/Soon';
 import About from './pages/About';
 import Skills from './pages/Skills';
+import TechClub from './pages/TechClub';
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <header className=' text-center p-6 flex flex-row z-10 sm:w-full sm:bg-white w-full shadow-lg top-0'>
+        <header className=' text-center p-6 flex flex-row z-10 sm:w-full sm:bg-white w-full shadow-lg top-0 bg-white'>
           <div className=' inline-block w-1/2 sm:w-full'>
             <Link to="/" className="inline-block no-underline font-semibold text-lg cursor-pointer align-middle">@AllenBrd</Link>
             <img alt="twitter" src='/assets/imgs/twitter.svg' onClick={twitterRedirect} className='md:hidden sm:inline-block inline-block align-middle ml-5 cursor-pointer' />
@@ -36,7 +37,7 @@ function App() {
             <img alt='linkedin' src='/assets/imgs/linkedin.svg' onClick={linkedinrRedirect} className='md:hidden sm:inline-block inline-block align-middle ml-5 cursor-pointer' />
           </div>
           <div className='sm:hidden inline-block float-right w-1/2 navLinks md:w-5/6 sm:w-0'>
-            <NavLink to="/about" activeClassName="active">About Me</NavLink>
+            {/* <NavLink to="/about" activeClassName="active">About Me</NavLink> */}
             <NavLink to="/skills" className='m-10 sm:m-4' activeClassName="active">Skills</NavLink>
             <NavLink to="/work" className='mr-10 sm:mr-4' activeClassName="active">Work</NavLink>
             <NavLink to="/contact" activeClassName="active">Contact Me</NavLink>
@@ -73,6 +74,7 @@ function App() {
               <Route path='/skills' exact element= { <Skills /> } />
               <Route path='/work' exact element= { <Soon /> } />
               <Route path='/contact' exact element= { <Contact /> } />
+              <Route path='/techclub' exact element= { <TechClub /> } />
             </Routes>
           </motion.div>
         </AnimatePresence>
