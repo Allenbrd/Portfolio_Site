@@ -5,6 +5,7 @@ export default function TechClub(){
             <div className="w-2/5 sm:w-3/4 sm:mx-auto">
             <br/><img alt="STC" src="/assets/imgs/Fichier 5STCnettePNG.png" className=" w-48 sm:w-1/2" /><br/>
                 <h1><b>The Sainte-Croix Tech Club</b></h1><br/>
+                <b>A few presentations I gave at the Tech Club are on YouTube! Click <a className=" underline text-blue-700" href="https://www.youtube.com/watch?v=HUF3Y9BBWlM&list=PLAwXpne2r2QmIiOeeFEdfUDZpc49G0Y0J">HERE</a> to view them.</b><br /><br />
                 <p>
                 In 11th grade, I was elected Class President. I had been at the school for fourteen years and I was eager to introduce something new from which the entire school community could benefit - a tech club. This might seem quite straightforward, but French 'lycees' are not known for their extracurricular activities, which are considered the domain of university studies. Our administration insisted the focus should be on our Baccalaureat and no student clubs existed before I proposed to create one. Nevertheless, I felt emboldened by my new position in student government and remained convinced of the need to inspire my peers about innovation and technology.
                 The STC is an association of students motivated to learn more about the new technologies that are shaping today's world and will change tomorrow's.<br /><br />
