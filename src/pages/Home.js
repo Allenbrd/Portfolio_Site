@@ -10,7 +10,7 @@ function Home() {
         <div className='external md:mt-28 '>
             <div className='my-28'>
                 <div className='internal w-full m-auto align-middle  text-center justify-center relative'>
-                <img alt='allen' src='/assets/imgs/allen.jpeg' className='w-36 rounded-full align-middle mx-auto my-10' />
+                {/* <img alt='allen' src='/assets/imgs/allen.jpeg' className='w-36 rounded-full align-middle mx-auto my-10' /> */}
                     <div className='h1Container'><h1 className='text-6xl inline-block align-middle'><div className='words'><span>Bonjour</span><span>Hello</span><span>Hola</span><span>مرحبا</span><span>Bonjour</span></div><span className='sm:hidden'>, I'm <span className='poppins font-semibold italic'>Allen </span><img alt="wavy hand" src='/assets/imgs/wavy_hand.png' className=' ml-5 w-14 inline-block align-middle' /></span></h1></div>
 
                     <p className='text-3xl mt-8 max-w-2xl mx-auto'>A young student passionate about <span className='srcCodePro italic text-gg'>computer science</span>, <span className='sfPro text-gg-yellow italic'>finance</span> and <span className='inria italic text-gg-green'>entrepreneurship</span></p>
