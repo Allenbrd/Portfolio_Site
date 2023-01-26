@@ -64,6 +64,10 @@ border: none;
   background-image: linear-gradient(to right, #31eaff, #7a54ff, #ff26ff);
 }
 
+.ottobg{
+  background-image: linear-gradient(to right, #000, #0060FA);
+}
+
 .afterstrwhitebg{
   background-image: linear-gradient(to right, #7131c3, #e50136);
 }

@@ -23,7 +23,7 @@ function Home() {
                     </div>
 
                     <motion.div 
-                        className='w-full mt-10 flex justify-evenly md:flex-col'
+                        className='w-full mt-10 flex flex-wrap justify-evenly md:flex-col'
                         initial={{ y:25, opacity: 0 }}
                         animate={{ y:0, opacity: 1 }}
                         transition={{
@@ -54,7 +54,18 @@ function Home() {
                             </div>
                         </div>
 
-                        <div onClick={() => {navigate('/learning')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 sm:w-3/4 md:mb-10 mx-auto '>
+                        <div onClick={() => {window.open('https://ottoprotocol.fi/', '_blank')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 sm:w-3/4 md:mb-10 mx-auto '>
+                            <div className=' ottobg w-full rounded-t-lg py-5 text-center'> 
+                                <img alt='otto' src='/assets/imgs/otto_typo.svg' className='max-h-12 h-auto p-2   mx-auto text-center'/>
+                            </div>
+                            <div className='w-full p-3'>
+                                <h3>Improving DeFi</h3>
+                                <p className=''>Competing in the Techstars global startup competition, I am part of a team of six people developing a delta-neutral stablecoin.</p>
+                                <a href='/learning' className=' text-blue-700 underline'>Learn more</a>
+                            </div>
+                        </div>
+                        
+                        {/* <div onClick={() => {navigate('/learning')}} className=' align-top inline-block rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 cursor-pointer border-none w-3/12 md:w-1/2 sm:w-3/4 md:mb-10 mx-auto '>
                             <div className=' learningbg w-full rounded-t-lg py-5 text-center'> 
                                 <img alt='stc' src='/assets/imgs/stcwhite.png' className='max-h-12 h-auto p-2 w-auto opacity-0  mx-auto text-center'/>
                             </div>
@@ -63,7 +74,7 @@ function Home() {
                                 <p className=''>In a world where technology is growing exponentially quicker every day, education drives me and help me staying up to date</p>
                                 <a href='/learning' className=' text-blue-700 underline'>Learn more</a>
                             </div>
-                        </div>
+                        </div> */}
                             
                     </motion.div>
 

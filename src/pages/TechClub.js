@@ -26,7 +26,8 @@ In order to further spread my positive impact on my peers and respond to a growi
             <div className=" w-2/5 sm:w-3/4 sm:mx-auto"><br />
 <quote>"It's revolutionary at Sainte Croix. Without the STC, my junior year would have been tasteless, almost bitter without this Thursday evening meeting. This club has great potential and brings computer science to St. Croix" - <i>Tim Marsat, STC Member</i>.<br /><br /></quote>
 
-                <img alt="STC" src="/assets/imgs/STC1.jpg" className=" rounded-xl" />
+                <img alt="STC2" src="/assets/imgs/STC1.jpg" className=" rounded-xl" />
+                <img alt="STC3" src="/assets/imgs/STC3.jpg" className=" mt-5 rounded-xl" />
             </div>
 
         </div>

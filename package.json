@@ -13,6 +13,7 @@
     "react-icon-cloud": "^4.1.4",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-skillbars": "^2.1.0",
     "simple-icons": "^7.17.0",
     "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"

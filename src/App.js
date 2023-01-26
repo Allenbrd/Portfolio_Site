@@ -13,10 +13,6 @@ function App() {
     window.open("https://twitter.com/Allenbrd", "_blank");
   }
 
-  function redditRedirect(){
-    window.open("https://www.reddit.com/user/AllenZeKriptoMan", "_blank");
-  }
-
   function githubRedirect(){
     window.open("https://github.com/Allenbrd", "_blank");
   }
@@ -32,7 +28,6 @@ function App() {
           <div className=' inline-block w-1/2 sm:w-full'>
             <Link to="/" className="inline-block no-underline font-semibold text-lg cursor-pointer align-middle">@AllenBrd</Link>
             <img alt="twitter" src='/assets/imgs/twitter.svg' onClick={twitterRedirect} className='md:hidden sm:inline-block inline-block align-middle ml-5 cursor-pointer' />
-            <img alt="reddit" src='/assets/imgs/reddit.svg' onClick={redditRedirect} className='md:hidden sm:inline-block inline-block align-middle ml-5 cursor-pointer' />
             <img alt='github' src='/assets/imgs/github.svg' onClick={githubRedirect} className='md:hidden sm:inline-block inline-block align-middle ml-5 cursor-pointer' />
             <img alt='linkedin' src='/assets/imgs/linkedin.svg' onClick={linkedinrRedirect} className='md:hidden sm:inline-block inline-block align-middle ml-5 cursor-pointer' />
           </div>
